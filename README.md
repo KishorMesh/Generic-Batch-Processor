@@ -5,20 +5,20 @@ A generic batch processor is used for dividing parallel work to multiple actors/
 
 ### Batch Processor workflow
 
-![Image of Workflow](https://github.com/vtthombre/Generic-Batch-Processor-using-Akka.NET/blob/master/workflow.PNG)
+![Image of Workflow](https://github.com/ERS-HCL/Generic-Batch-Processor.git/blob/master/workflow.PNG)
 
 
 ## Job Manager
 Job Manger is managing all the tasks and their status. This can be UI or console based appliaction.
 ### Job Pool Controller Actor
-Job Pool Controller actor has following responsibilities
+Job Pool Controller Actor has following responsibilities
 1. Assign the task to commander actor
 2. Get the response from commander actor
 3. update the job status
 4. print the job statastics
  
 ### Job Scheduler
-Job Scheduler is responsible for scheduling the job after each interval (10 sec ). It is also responsible for checking the job status after every 3 minutes.
+Job Scheduler is responsible for scheduling the job after each interval (10 sec ). It is also responsible for checking the job status after every 3 minutes interval.
 
 
 ## Executer
@@ -42,7 +42,10 @@ Worker actor is the last actor in the hierarchy which actully perform the task. 
 2. Update the task status to coordinator
 
 ## Current Samples
-**[Concurrent application for Batch Processing](/Concurrent_Application/)** - how to execute multiple tasks concurrently as well as paralley in Akka.NET.
+**[Concurrent application for Batch Processing](/Concurrent-Application/)** - how to execute multiple tasks concurrently as well as paralley in Akka.NET.
+
+## Build Instructions
+
 
 ## Contributing
 
@@ -50,9 +53,10 @@ Please feel free to contribute.
 
 ### Questions about Samples?
 
-Please [create a Github issue](https://github.com/vtthombre/Generic-Batch-Processor-using-Akka.NET/issues) for any questions you might have.
+Please [create a Github issue]https://github.com/ERS-HCL/Generic-Batch-Processor.git/issues) for any questions you might have.
 
 ### Code License
+MIT
 
-
-## About Author
+## Author
+Vijay Thombre
