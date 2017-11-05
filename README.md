@@ -5,7 +5,7 @@ A generic batch processor is used for dividing parallel work to multiple actors/
 
 ### Batch Processor workflow
 
-![Image of Workflow](https://github.com/ERS-HCL/Generic-Batch-Processor.git/blob/master/workflow.PNG)
+![Image of Workflow](https://github.com/ERS-HCL/Generic-Batch-Processor/blob/master/workflow.PNG)
 
 
 ## Job Manager
@@ -53,7 +53,7 @@ Please feel free to contribute.
 
 ### Questions about Samples?
 
-Please [create a Github issue]https://github.com/ERS-HCL/Generic-Batch-Processor.git/issues) for any questions you might have.
+Please [create a Github issue] (https://github.com/ERS-HCL/Generic-Batch-Processor/issues) for any questions you might have.
 
 ### Code License
 MIT
