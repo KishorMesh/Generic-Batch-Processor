@@ -14,13 +14,13 @@ namespace TaskExecuter.Shared.ExternalSystems
         {
             string outputPath = ConfigurationManager.AppSettings["ClientOutputFolderPath"];
             string exePath = ConfigurationManager.AppSettings["ClientExecutablePath"];
-            string title = string.Format($"Clipping Executer : Task {taskMessage.ID}");
+            string title = string.Format($"Executer : Task {taskMessage.ID}");
 
             outputPath = ConvertToURIPath(outputPath);
             exePath = ConvertToURIPath(exePath);
 
-            string compartmentExtractor = outputPath + @"/" + "CompartmentExtractor.txt";
-            string childExtractor = outputPath + @"/" + taskMessage.Description;
+            string extractor1 = outputPath + @"/" + "Extractor1.txt";
+            string extractor2 = outputPath + @"/" + taskMessage.Description;
 
             return await Task.Delay(100)
                .ContinueWith<AcknowledgementMessage>(task =>
@@ -30,26 +30,26 @@ namespace TaskExecuter.Shared.ExternalSystems
                    int exitCode = 0;
                    AcknowledgementReceipt receipt = AcknowledgementReceipt.SUCCESS;
 
-                   if (string.IsNullOrEmpty(childExtractor) || string.IsNullOrEmpty(compartmentExtractor)
+                   if (string.IsNullOrEmpty(extractor2) || string.IsNullOrEmpty(extractor1)
                    || string.IsNullOrEmpty(outputPath) || string.IsNullOrEmpty(exePath))
                    {
                        receipt = AcknowledgementReceipt.INVALID_TASK;
                    }
                    else
                    {
-                       Task clipperTask = Task.Factory.StartNew(() =>
+                       Task exteranlTask = Task.Factory.StartNew(() =>
                        {
-                           ExecuteCompartmentClipper(compartmentExtractor, childExtractor,
+                           ExecuteExternalApplication(extractor1, extractor2,
                                outputPath, exePath, title, ref taskTime, ref exitCode);
                        });
 
                        // wait for task to complete
-                       clipperTask.Wait();
+                       exteranlTask.Wait();
 
                        Console.WriteLine(string.Format("Clpping process for task {0} exited with exit code {1}:",
                            taskMessage.ID.ToString(), exitCode.ToString()));
 
-                       switch (clipperTask.Status)
+                       switch (exteranlTask.Status)
                        {
                            case TaskStatus.Faulted:
                                receipt = AcknowledgementReceipt.FAILED;
@@ -89,7 +89,7 @@ namespace TaskExecuter.Shared.ExternalSystems
         }
 
         #region Executer Program
-        private void ExecuteCompartmentClipper(string compExtractorPath, string childExtractorPath,
+        private void ExecuteExternalApplication(string extractor1Path, string extractor2Path,
             string outputPath, string exePath, string title, ref long taskTime, ref int exitCode)
         {
             Stopwatch watch = new Stopwatch();
@@ -99,7 +99,7 @@ namespace TaskExecuter.Shared.ExternalSystems
             using (Process Executer = new Process())
             {
                 Executer.StartInfo.FileName = exePath;
-                Executer.StartInfo.Arguments = "\"" + compExtractorPath + "\" " + "\"" + childExtractorPath + "\" " + "\"" + outputPath + "\" " + "\" " + title + "\" ";
+                Executer.StartInfo.Arguments = "\"" + extractor1Path + "\" " + "\"" + extractor2Path + "\" " + "\"" + outputPath + "\" " + "\" " + title + "\" ";
                 Executer.StartInfo.UseShellExecute = true;
                 Executer.StartInfo.Verb = "runas";
                 Executer.StartInfo.RedirectStandardOutput = false;
