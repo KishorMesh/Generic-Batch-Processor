@@ -1,8 +1,5 @@
 ﻿## Fault tolerant and resilient distributed application for batch processing using [Akka.NET](http://getakka.net/ "Akka.NET - .NET distributed actor framework"). 
-Demonstrates via a console application how multple tasks are performed in distributed system. 
-
-### The goal of this sample is to show you how to use Akka.Cluster to form resilient systems that can scale out across multiple processes or machines without complicated user-defined code or expensive tools.
-
+The goal of this sample is to show you how to use Akka.Cluster to form resilient systems that can scale out across multiple processes or machines without complicated user-defined code or expensive tools.
 
 ## Workflow
 
