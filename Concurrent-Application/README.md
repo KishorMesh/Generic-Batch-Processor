@@ -4,6 +4,8 @@ Demonstrates via a console application how `concurrent as well as parallely perf
 ![Image of Workflow](/Concurrent-Application/Workflow.PNG)
 
 
+## Build Instructions
+
 ## Contributing
 
 Please feel free to contribute.
@@ -15,7 +17,6 @@ If you have any questions about this sample, please [create a Github issue for u
 ### Code License
 MIT
 
-## About Author
 
 
 
