@@ -49,9 +49,6 @@ Worker actor is the last actor in the hierarchy which actully perform the task. 
 **[Fault Tolerant Distributed application for Batch Processing](/Distributed-Application/)** - Demostrates how multple tasks performed on distributed systems in Akka.NET. 
 
 
-## Build Instructions
-
-
 ## Contributing
 
 Please feel free to contribute.
@@ -72,4 +69,4 @@ Detailed documentaion about Akka.NET is available at [Akka.NET docs](http://geta
 
 ## Author
 Vijaykumar Thombre
-Vijaykumar.Thombre@Hcl.com
+[ Vijaykumar.Thombre@Hcl.com ]
