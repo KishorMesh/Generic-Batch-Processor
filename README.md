@@ -46,11 +46,8 @@ Worker actor is the last actor in the hierarchy which actully perform the task. 
 
 **[Fault Tolerant Remote application for Batch Processing](/Remote-Application/)** - Demostrates how remotely perform multple tasks concurrently as well as parallely in Akka.NET. 
 
-![Image of LocationTransparency](/Remote-Application/Location_Transparency.PNG)
-
 **[Fault Tolerant Distributed application for Batch Processing](/Distributed-Application/)** - Demostrates how multple tasks performed on distributed systems in Akka.NET. 
 
-![Image of Distributed System Workflow](/Distributed-Application/Distribute_Flow_Diagram.PNG)
 
 ## Build Instructions
 
@@ -71,8 +68,7 @@ MIT
 Detailed documentaion about Akka.NET is available at [Akka.NET docs](http://getakka.net/).
 
 ## Tools / prerequisites
-This course expects the following:
-- You have some programming experience and familiarity with C#
+- You should have some programming experience and familiarity with C#
 
 ## Author
 Vijaykumar Thombre

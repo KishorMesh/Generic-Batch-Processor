@@ -1,6 +1,12 @@
 ﻿## Distributed application for batch processing which is fault tolerant and can scale and scale out using [Akka.NET](http://getakka.net/ "Akka.NET - .NET distributed actor framework"). 
 Demonstrates via a console application how multple tasks are performed in distribbuted system. 
 
+## Distribute Workflow
+
+![Image of Distributed System Workflow](/Distributed-Application/Distribute_Flow_Diagram.PNG)
+
+## Workflow
+
 ![Image of Workflow](/Distributed-Application/Workflow.PNG)
 
 

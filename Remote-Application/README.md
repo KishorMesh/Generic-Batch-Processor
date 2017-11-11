@@ -1,7 +1,12 @@
 ﻿## Remote application for batch processing which is fault tolerant using [Akka.NET](http://getakka.net/ "Akka.NET - .NET distributed actor framework"). 
 Demonstrates via a console application how remotely perform multple tasks concurrently as well as parallely. 
 
+## Loacation Transparency
+![Image of LocationTransparency](/Remote-Application/Location_Transparency.PNG)
+
+## Workflow
 ![Image of Workflow](/Remote-Application/Remote_Workflow.PNG)
+
 
 ## Contributing
 
