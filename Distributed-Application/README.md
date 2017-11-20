@@ -9,7 +9,7 @@ The goal of this sample is to show you how to use Akka.Cluster to form resilient
 
 In this sample we're actually going to run three different pieces of software concurrently:
 * **`[Lighthouse]`** - An instance of the **[Lighthouse](https://github.com/petabridge/lighthouse "Lighthouse - Service Discovery for Akka.NET")** service, so you'll want to clone and build that repository in you intend to run this sample;
-* **`[Client]`** - A dedicated console application built using Akka.Cluster. This is a single instance apllication whose job is to assign the jobs to API and get the updates from API. This application plays a Job Manager role. 
+* **`[Client]`** - A dedicated console application built using Akka.Cluster. This is a single instance application whose job is to assign the jobs to API and get the updates from API. This application plays a Job Manager role. 
 * **`[API]`** - A dedicated console application built using Akka.Cluster. This is where all of the scalable processing work is done in this sample, and multiple instances of these application can be run in parallel in order to cooperatively execute a job assigned by  Job Manager (Client application).  
 
 
@@ -29,7 +29,7 @@ It has two jobs:
 There can be multiple `[Lighthouse]` roles running in parallel, but all of their addresses need to be written into the `akka.cluster` HOCON configuration section of each `[Client]` and `[API]` node in order to use Lighthouse's capabilities effectively.
 
 #### `[Client]` Role
-The `[Client]` role corresponds to everything inside the `[Client project]` that uses a lightweight `ActorSystem` to communicate with all `[API]` roles. It's meant to act as the [Job Manager] aprt of the Application.
+The `[Client]` role corresponds to everything inside the `[Client project]` that uses a lightweight `ActorSystem` to communicate with all `[API]` roles. It's meant to act as the [Job Manager] part of the Application.
 
 This application creates the job pool, schedules them and assign to any availbale API. This applcation keeps teh status of each task and displays the summary after completion of all jobs. This appliaction also managed the failed tasks and decide the strategy whether they will need to restart or not.
 

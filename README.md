@@ -9,7 +9,7 @@ A generic batch processor is used for dividing parallel work to multiple actors/
 
 
 ## Job Manager
-Job Manger is managing all the tasks and their status. This can be UI or console based appliaction.
+Job Manger is managing all the tasks and their status. This can be UI or console based application.
 ### Job Pool Controller Actor
 Job Pool Controller Actor has following responsibilities
 1. Assign the task to commander actor
