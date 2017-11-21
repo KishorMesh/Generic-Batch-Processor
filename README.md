@@ -55,7 +55,7 @@ Please feel free to contribute.
 
 ### Questions about Samples?
 
-Please '[create a Github issue]' (https://github.com/ERS-HCL/Generic-Batch-Processor/issues) for any questions you might have.
+Please [Create a Github issue](https://github.com/ERS-HCL/Generic-Batch-Processor/issues) for any questions you might have.
 
 ### Code License
 MIT
