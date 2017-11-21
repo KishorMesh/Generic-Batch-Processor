@@ -18,11 +18,11 @@ Job Pool Controller Actor has following responsibilities
 4. print the job statastics
  
 ### Job Scheduler
-Job Scheduler is responsible for scheduling the job after each interval (10 sec ). It is also responsible for checking the job status after every 3 minutes interval.
+Job Scheduler is responsible for scheduling the job after each interval (10 sec ). It is also responsible for checking the job status after some interval.
 
 
 ## Executer
-Executer is the backbone the batchprocessor acgtor system. It is responsible for taking the job from job manager (Job pool controller actor) and perfor that job and after completion, update job manager.
+Executer is the backbone the batchprocessor actor system. It is responsible for taking the job from job manager (Job pool controller actor) and perfor that job and after completion, update job manager.
 ### Commander Actor
 Commander actor has following responsibilities-
 1. Create the broadcast router for creating coordinator instances.
@@ -55,7 +55,7 @@ Please feel free to contribute.
 
 ### Questions about Samples?
 
-Please [create a Github issue] (https://github.com/ERS-HCL/Generic-Batch-Processor/issues) for any questions you might have.
+Please '[create a Github issue]' (https://github.com/ERS-HCL/Generic-Batch-Processor/issues) for any questions you might have.
 
 ### Code License
 MIT
