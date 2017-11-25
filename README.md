@@ -68,6 +68,7 @@ Detailed documentaion about Akka.NET is available at [Akka.NET docs](http://geta
 
 ## Tools / prerequisites
 - You should have some programming experience and familiarity with C#, WPF, Akka.NET and Actor Model
+- Visual Studio 2013 or later
 
 ## Author
 Vijaykumar Thombre
