@@ -8,8 +8,11 @@ Demonstrates via a console application how `concurrent as well as parallely perf
 
 ## Running the Sample
 1. Open `TaskExecuter.sln` in Visual Studio 2012 or later.
-2. Press `F6` to build the sample - this solution has [NuGet package restore](http://docs.nuget.org/docs/workflows/using-nuget-without-committing-packages) enabled, so any third party dependencies will automatically be downloaded and added as references.
-3. Press `F5` to run the sample.
+2. Open `BatchProcessor.sln` in Visual Studio 2015 or later.
+3. Open ClientTaskExceuter.cs file and modify ExecuteTask() method for you application.
+4. Provide the job deatils in JobPool.txt file
+5. Press `F6` to build the sample - this solution has [NuGet package restore](http://docs.nuget.org/docs/workflows/using-nuget-without-committing-packages) enabled, so any third party dependencies will automatically be downloaded and added as references.
+6. Press `F5` to run the sample.
 
 
 ## Contributing

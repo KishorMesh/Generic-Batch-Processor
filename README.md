@@ -42,11 +42,13 @@ Worker actor is the last actor in the hierarchy which actully perform the task. 
 2. Update the task status to coordinator
 
 ## Current Samples
-**[Fault Tolerant Concurrent application for Batch Processing](/Concurrent-Application/)** - Demostrates how to execute multiple tasks concurrently as well as paralley in Akka.NET.
+**[Fault Tolerant Concurrent application for Batch Processing](/Concurrent-Application/)** - Demonstrates how to execute multiple tasks concurrently as well as paralley in Akka.NET.
 
-**[Fault Tolerant Remote application for Batch Processing](/Remote-Application/)** - Demostrates how remotely perform multple tasks concurrently as well as parallely in Akka.NET. 
+**[Fault Tolerant Remote application for Batch Processing](/Remote-Application/)** - Demonstrates how remotely perform multple tasks concurrently as well as parallely in Akka.NET. 
 
-**[Fault Tolerant Distributed application for Batch Processing](/Distributed-Application/)** - Demostrates how multple tasks performed on distributed systems in Akka.NET. 
+**[Fault Tolerant Distributed application for Batch Processing](/Distributed-Application/)** - Demonstrates how multiple  tasks performed on distributed systems in Akka.NET. 
+
+**[Fault Tolerant Reactive application for Batch Processing](/Reactive-Application/)** - Demonstrates how multiple tasks performed on Reactive systems for distributed application in Akka.NET. 
 
 
 ## Contributing
@@ -61,11 +63,11 @@ Please [Create a Github issue](https://github.com/ERS-HCL/Generic-Batch-Processo
 MIT
 
 
-## Docs
+## Documents
 Detailed documentaion about Akka.NET is available at [Akka.NET docs](http://getakka.net/).
 
 ## Tools / prerequisites
-- You should have some programming experience and familiarity with C#
+- You should have some programming experience and familiarity with C#, WPF, Akka.NET and Actor Model
 
 ## Author
 Vijaykumar Thombre
