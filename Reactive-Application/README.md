@@ -42,7 +42,9 @@ This application processed the job assigned by Job Manager `[Client]`. Once the 
 
 There can be multiple instances of the `[API]` role.
 
+## Output
 
+! [Image of Output] (/Reactive-Application/JobDetails.PNG)
 ## Running the Sample
 
 1. Clone this repository to your local computer - we highly recommend installing [GitHub for Windows] (https://windows.github.com/ "GitHub for Windows") if you don't already have a Git client installed.

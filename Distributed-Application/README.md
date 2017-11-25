@@ -42,9 +42,6 @@ This application processed the job assigned by Job Manager `[Client]`. Once the 
 
 There can be multiple instances of the `[API]` role.
 
-## Output
-
-! [Image of Output] (/Reactive-Application/JobDetails.JPG)(/Reactive-Application/Summary.JPG)
 
 ## Running the Sample
 
