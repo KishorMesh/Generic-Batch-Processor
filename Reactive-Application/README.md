@@ -1,5 +1,5 @@
 ﻿## Fault tolerant and resilient Reactive application for distributed batch processing using [Akka.NET](http://getakka.net/ "Akka.NET - .NET distributed actor framework"). 
-The goal of this sample is to show you how to use Akka.Cluster to form resilient systems that can scale out across multiple processes or machines without complicated user-defined code or expensive tools.
+The goal of this sample is to show you how to use Akka.Cluster to form resilient systems that can scale out across multiple processes or machines without complicated user-defined code or expensive tools on Reactive System.
 
 ## Workflow
 
@@ -44,9 +44,9 @@ There can be multiple instances of the `[API]` role.
 
 ## Output
 
-![Image of Output](/Reactive-Application/JobDetails.PNG)
+![Image of Output](/Reactive-Application/JobDetails.png)
 
-![Image of Summary](/Reactive-Application/Summary.PNG)
+![Image of Summary](/Reactive-Application/Summary.png)
 
 ## Running the Sample
 
