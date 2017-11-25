@@ -29,7 +29,7 @@ It has two jobs:
 There can be multiple `[Lighthouse]` roles running in parallel, but all of their addresses need to be written into the `akka.cluster` HOCON configuration section of each `[Client]` and `[API]` node in order to use Lighthouse's capabilities effectively.
 
 #### `[Client]` Role
-The `[Client]` role corresponds to everything inside the `[Client project]` that uses a lightweight `ActorSystem` to communicate with all `[API]` roles. It's meant to act as the [Job Manager] part of the Application.
+The `[Client]` role corresponds to everything inside the `[ReactiveClient project]` that uses a lightweight `ActorSystem` to communicate with all `[API]` roles. It's meant to act as the [Job Manager] part of the Application.
 
 This application creates the job pool, schedules them and assign to any available API. This application keeps the status of each task and displays the summary after completion of all jobs. This application also managed the failed tasks and decide the strategy whether they will need to restart or not.
 
@@ -44,7 +44,7 @@ There can be multiple instances of the `[API]` role.
 
 ## Output
 
-![Image of Output](/Reactive-Application/JobDetails.PNG)
+![Image of Output](/Reactive-Application/JobDetails.png)
 
 ![Image of Summary](/Reactive-Application/Summary.png)
 
