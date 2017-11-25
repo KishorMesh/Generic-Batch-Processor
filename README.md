@@ -50,6 +50,11 @@ Worker actor is the last actor in the hierarchy which actully perform the task. 
 
 **[Fault Tolerant Reactive application for Batch Processing](/Reactive-Application/)** - Demonstrates how multiple tasks performed on Reactive systems for distributed application in Akka.NET. 
 
+This Batch Processor approach can be used for –
+1.	File conversion 
+2.	Running Automated test cases
+3.	Stream Analytics (IOT sensor data)
+4.	Database Backup/replication
 
 ## Contributing
 
@@ -72,4 +77,4 @@ Detailed documentaion about Akka.NET is available at [Akka.NET docs](http://geta
 
 ## Author
 Vijaykumar Thombre
-[ Vijaykumar.Thombre@Hcl.com ]
+[ Vijaykumar.Thombre@hcl.com ]
