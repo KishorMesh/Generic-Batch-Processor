@@ -8,7 +8,7 @@ The goal of this sample is to show you how to use Akka.Cluster to form resilient
 ## Sample Overview
 
 In this sample we're actually going to run three different pieces of software concurrently:
-* **`[Lighthouse]`** - An instance of the **[Lighthouse](https://github.com/petabridge/lighthouse "Lighthouse - Service Discovery for Akka.NET”) ** service, so you'll want to clone and build that repository in you intend to run this sample;
+* **`[Lighthouse]`** - An instance of the **[Lighthouse](https://github.com/petabridge/lighthouse "Lighthouse - Service Discovery for Akka.NET")** service, so you'll want to clone and build that repository in you intend to run this sample;
 * **`[Client]`** - A dedicated console application built using Akka.Cluster. This is a single instance application whose job is to assign the jobs to API and get the updates from API. This application plays a Job Manager role. 
 * **`[API]`** - A dedicated console application built using Akka.Cluster. This is where all of the scalable processing work is done in this sample, and multiple instances of these application can be run in parallel in order to cooperatively execute a job assigned by Job Manager (Client application).  
 
