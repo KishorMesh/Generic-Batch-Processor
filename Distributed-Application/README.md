@@ -50,6 +50,13 @@ There can be multiple instances of the `[API]` role.
 3. Open the `Lighthouse.sln` and change this line in App.config  `lighthouse {
   actorsystem: "batchProcessor" #change from "lighthouse" to "batchProcessor"
 }`
+and update the actorsystem address in 
+cluster '{
+	#will inject this node as a self-seed node at run-time
+	seed-nodes = ["akka.tcp://batchProcessor@127.0.0.1:4053"]
+	roles = [lighthouse]
+}'
+
 4. Press `F6` to start Lighthouse.
 4. Open `BatchProcessor.sln` in Visual Studio 2015 or later.
 5. Open ClientTaskExceuter.cs file and modify ExecuteTask() method for your application.
